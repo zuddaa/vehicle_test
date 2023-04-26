@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "125D7328-315E-433A-A541-9F00BBE8FA93"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "033E8A66-4D1C-4CAF-B285-DB2782E71087"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Vehicle-Test/Coordinators/AuthCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "showMainApp()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "00BFFE2B-EC92-4C83-B89F-8D4A2A6F2930"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Vehicle-Test/Coordinators/AppCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "init(navigation:window:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "00BFFE2B-EC92-4C83-B89F-8D4A2A6F2930 - 5bda5f424fd50fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Authentification.ApplicationState) -&gt; () in Vehicle_Test.AppCoordinator.init(navigation: Swift.Optional&lt;__C.UINavigationController&gt;, window: Swift.Optional&lt;__C.UIWindow&gt;) -&gt; Vehicle_Test.AppCoordinator"
+                  moduleName = "Vehicle-Test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/izudinvragic/Documents/Tests/Vehicle%20Test/Vehicle-Test/Coordinators/AppCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "00BFFE2B-EC92-4C83-B89F-8D4A2A6F2930 - 5bda5f424fd50fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Authentification.ApplicationState) -&gt; () in Vehicle_Test.AppCoordinator.init(navigation: Swift.Optional&lt;__C.UINavigationController&gt;, window: Swift.Optional&lt;__C.UIWindow&gt;) -&gt; Vehicle_Test.AppCoordinator"
+                  moduleName = "Vehicle-Test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/izudinvragic/Documents/Tests/Vehicle%20Test/Vehicle-Test/Coordinators/AppCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "308">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "239AB799-C389-4B82-A326-B4B9DB654B6F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Vehicle-Test/Coordinators/MainCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "showHome()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
