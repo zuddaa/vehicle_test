@@ -45,6 +45,21 @@
 		4C7D266029F967EC009672D5 /* UserLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D265F29F967EC009672D5 /* UserLocalDataSource.swift */; };
 		4C7D266229F96820009672D5 /* UserRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D266129F96820009672D5 /* UserRemoteDataSource.swift */; };
 		4C7D266429F97F9F009672D5 /* AuthRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D266329F97F9F009672D5 /* AuthRouting.swift */; };
+		4C7D266729F992A3009672D5 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D266629F992A3009672D5 /* Vehicle.swift */; };
+		4C7D266929F992C3009672D5 /* VehicleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D266829F992C3009672D5 /* VehicleInfo.swift */; };
+		4C7D266B29F992EF009672D5 /* ImageCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D266A29F992EF009672D5 /* ImageCount.swift */; };
+		4C7D266D29F9935F009672D5 /* VehicleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D266C29F9935F009672D5 /* VehicleResponse.swift */; };
+		4C7D266F29F994E8009672D5 /* ApiResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D266E29F994E8009672D5 /* ApiResult.swift */; };
+		4C7D267129F99510009672D5 /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D267029F99510009672D5 /* DomainError.swift */; };
+		4C7D267329F995F9009672D5 /* VehicleDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D267229F995F9009672D5 /* VehicleDataRepository.swift */; };
+		4C7D267529F996A2009672D5 /* VehicleRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D267429F996A2009672D5 /* VehicleRemoteDataSource.swift */; };
+		4C7D267729F996B1009672D5 /* VehicleLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D267629F996B1009672D5 /* VehicleLocalDataSource.swift */; };
+		4C7D267929F996F9009672D5 /* VehiclesNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D267829F996F9009672D5 /* VehiclesNetworkService.swift */; };
+		4C7D267B29F999A9009672D5 /* PostVehicleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D267A29F999A9009672D5 /* PostVehicleResponse.swift */; };
+		4C7D267D29F99A02009672D5 /* PostVehicleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D267C29F99A02009672D5 /* PostVehicleRequest.swift */; };
+		4C7D267F29F9A554009672D5 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D267E29F9A554009672D5 /* NetworkClient.swift */; };
+		4C7D268229FA657D009672D5 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D268129FA657D009672D5 /* AddViewController.swift */; };
+		4C7D268429FA658C009672D5 /* AddViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D268329FA658C009672D5 /* AddViewModel.swift */; };
 		4FC3BD0CEEC0175B285585E0 /* HomeFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A13E0FC2A892BC6727D60 /* HomeFeature.swift */; };
 		53F16640648BEB6A15D79A03 /* Pods_Api.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D95646926DBC5551E8A22FE /* Pods_Api.framework */; };
 		5A0604FBD22BBED492CE867B /* HomeCofiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52200B21C111D4708351FC39 /* HomeCofiguration.swift */; };
@@ -179,6 +194,21 @@
 		4C7D265F29F967EC009672D5 /* UserLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocalDataSource.swift; sourceTree = "<group>"; };
 		4C7D266129F96820009672D5 /* UserRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRemoteDataSource.swift; sourceTree = "<group>"; };
 		4C7D266329F97F9F009672D5 /* AuthRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRouting.swift; sourceTree = "<group>"; };
+		4C7D266629F992A3009672D5 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		4C7D266829F992C3009672D5 /* VehicleInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleInfo.swift; sourceTree = "<group>"; };
+		4C7D266A29F992EF009672D5 /* ImageCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCount.swift; sourceTree = "<group>"; };
+		4C7D266C29F9935F009672D5 /* VehicleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleResponse.swift; sourceTree = "<group>"; };
+		4C7D266E29F994E8009672D5 /* ApiResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResult.swift; sourceTree = "<group>"; };
+		4C7D267029F99510009672D5 /* DomainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainError.swift; sourceTree = "<group>"; };
+		4C7D267229F995F9009672D5 /* VehicleDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDataRepository.swift; sourceTree = "<group>"; };
+		4C7D267429F996A2009672D5 /* VehicleRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleRemoteDataSource.swift; sourceTree = "<group>"; };
+		4C7D267629F996B1009672D5 /* VehicleLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleLocalDataSource.swift; sourceTree = "<group>"; };
+		4C7D267829F996F9009672D5 /* VehiclesNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesNetworkService.swift; sourceTree = "<group>"; };
+		4C7D267A29F999A9009672D5 /* PostVehicleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVehicleResponse.swift; sourceTree = "<group>"; };
+		4C7D267C29F99A02009672D5 /* PostVehicleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVehicleRequest.swift; sourceTree = "<group>"; };
+		4C7D267E29F9A554009672D5 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		4C7D268129FA657D009672D5 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		4C7D268329FA658C009672D5 /* AddViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewModel.swift; sourceTree = "<group>"; };
 		52200B21C111D4708351FC39 /* HomeCofiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCofiguration.swift; sourceTree = "<group>"; };
 		564A04859ACC71A38EC8566D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BCD0C8359E17EC05676C2C3 /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -282,6 +312,8 @@
 				4C7D262529F92C6D009672D5 /* Remote */,
 				4C7D262429F92C66009672D5 /* Models */,
 				4C7D262329F92C5C009672D5 /* Repos */,
+				4C7D266E29F994E8009672D5 /* ApiResult.swift */,
+				4C7D267029F99510009672D5 /* DomainError.swift */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -289,6 +321,7 @@
 		365FF839A12F0FD8C9DAD0C0 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				4C7D268029FA6562009672D5 /* Add */,
 				4C7D261329F92AAB009672D5 /* Protocols */,
 				4C7D261229F92AA4009672D5 /* List */,
 				735B02C07D329C7B13676061 /* Source */,
@@ -346,6 +379,7 @@
 				4C7D262729F92CB1009672D5 /* VehiclesRepository.swift */,
 				4C7D262929F92CC3009672D5 /* UserRepository.swift */,
 				4C7D265D29F9679C009672D5 /* UserDataRepository.swift */,
+				4C7D267229F995F9009672D5 /* VehicleDataRepository.swift */,
 			);
 			path = Repos;
 			sourceTree = "<group>";
@@ -353,6 +387,7 @@
 		4C7D262429F92C66009672D5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4C7D266529F99219009672D5 /* Vehicle */,
 				4C7D262F29F92D82009672D5 /* User */,
 			);
 			path = Models;
@@ -364,6 +399,9 @@
 				4C7D263029F92DE5009672D5 /* NetworkConstants.swift */,
 				4C7D263229F92E2B009672D5 /* UserNetworkService.swift */,
 				4C7D266129F96820009672D5 /* UserRemoteDataSource.swift */,
+				4C7D267429F996A2009672D5 /* VehicleRemoteDataSource.swift */,
+				4C7D267829F996F9009672D5 /* VehiclesNetworkService.swift */,
+				4C7D267E29F9A554009672D5 /* NetworkClient.swift */,
 			);
 			path = Remote;
 			sourceTree = "<group>";
@@ -372,6 +410,7 @@
 			isa = PBXGroup;
 			children = (
 				4C7D265F29F967EC009672D5 /* UserLocalDataSource.swift */,
+				4C7D267629F996B1009672D5 /* VehicleLocalDataSource.swift */,
 			);
 			path = Local;
 			sourceTree = "<group>";
@@ -434,6 +473,28 @@
 				4C7D265B29F95B71009672D5 /* AuthUseCaseImpl.swift */,
 			);
 			path = UseCaseImplementations;
+			sourceTree = "<group>";
+		};
+		4C7D266529F99219009672D5 /* Vehicle */ = {
+			isa = PBXGroup;
+			children = (
+				4C7D266629F992A3009672D5 /* Vehicle.swift */,
+				4C7D266829F992C3009672D5 /* VehicleInfo.swift */,
+				4C7D266A29F992EF009672D5 /* ImageCount.swift */,
+				4C7D266C29F9935F009672D5 /* VehicleResponse.swift */,
+				4C7D267A29F999A9009672D5 /* PostVehicleResponse.swift */,
+				4C7D267C29F99A02009672D5 /* PostVehicleRequest.swift */,
+			);
+			path = Vehicle;
+			sourceTree = "<group>";
+		};
+		4C7D268029FA6562009672D5 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				4C7D268129FA657D009672D5 /* AddViewController.swift */,
+				4C7D268329FA658C009672D5 /* AddViewModel.swift */,
+			);
+			path = Add;
 			sourceTree = "<group>";
 		};
 		735B02C07D329C7B13676061 /* Source */ = {
@@ -850,6 +911,8 @@
 			files = (
 				5A0604FBD22BBED492CE867B /* HomeCofiguration.swift in Sources */,
 				4FC3BD0CEEC0175B285585E0 /* HomeFeature.swift in Sources */,
+				4C7D268429FA658C009672D5 /* AddViewModel.swift in Sources */,
+				4C7D268229FA657D009672D5 /* AddViewController.swift in Sources */,
 				4C7D261529F92AD9009672D5 /* HomeViewController.swift in Sources */,
 				4C7D261729F92AEA009672D5 /* HomeViewModel.swift in Sources */,
 				4C7D264C29F93C09009672D5 /* HomeRouter.swift in Sources */,
@@ -860,20 +923,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C7D266D29F9935F009672D5 /* VehicleResponse.swift in Sources */,
 				4C7D262C29F92D39009672D5 /* UserLoginRequest.swift in Sources */,
 				4C7D263D29F92FB8009672D5 /* Role.swift in Sources */,
 				4C7D263329F92E2B009672D5 /* UserNetworkService.swift in Sources */,
+				4C7D267529F996A2009672D5 /* VehicleRemoteDataSource.swift in Sources */,
+				4C7D266B29F992EF009672D5 /* ImageCount.swift in Sources */,
+				4C7D266929F992C3009672D5 /* VehicleInfo.swift in Sources */,
 				4C7D262E29F92D7E009672D5 /* UserLoginResponse.swift in Sources */,
+				4C7D266F29F994E8009672D5 /* ApiResult.swift in Sources */,
 				4C7D263B29F92F98009672D5 /* UserSettings.swift in Sources */,
 				4C7D263729F92F55009672D5 /* Customer.swift in Sources */,
+				4C7D267F29F9A554009672D5 /* NetworkClient.swift in Sources */,
 				4C7D263F29F92FD7009672D5 /* Credit.swift in Sources */,
 				4C7D263129F92DE5009672D5 /* NetworkConstants.swift in Sources */,
+				4C7D267729F996B1009672D5 /* VehicleLocalDataSource.swift in Sources */,
+				4C7D267D29F99A02009672D5 /* PostVehicleRequest.swift in Sources */,
+				4C7D267929F996F9009672D5 /* VehiclesNetworkService.swift in Sources */,
+				4C7D266729F992A3009672D5 /* Vehicle.swift in Sources */,
 				4C7D265E29F9679C009672D5 /* UserDataRepository.swift in Sources */,
 				4C7D266229F96820009672D5 /* UserRemoteDataSource.swift in Sources */,
 				4C7D262829F92CB1009672D5 /* VehiclesRepository.swift in Sources */,
+				4C7D267B29F999A9009672D5 /* PostVehicleResponse.swift in Sources */,
 				4C7D262A29F92CC4009672D5 /* UserRepository.swift in Sources */,
 				4C7D263529F92F3A009672D5 /* User.swift in Sources */,
+				4C7D267329F995F9009672D5 /* VehicleDataRepository.swift in Sources */,
 				4C7D263929F92F7C009672D5 /* Client.swift in Sources */,
+				4C7D267129F99510009672D5 /* DomainError.swift in Sources */,
 				4C7D266029F967EC009672D5 /* UserLocalDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

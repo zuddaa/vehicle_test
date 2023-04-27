@@ -13,20 +13,11 @@ class HomeRouting: HomeRouter {
   weak var navigation: UINavigationController?
   
   func addNewVehicle() {
-    
+    let vc = HomeFeature.createAddViewController()
+    navigation?.pushViewController(vc, animated: true)
   }
   
   init(navigation: UINavigationController) {
-//    let buttonWidth = CGFloat(60)
-//    let buttonHeight = CGFloat(60)
-//
-//    let button = UIButton(type: .custom)
-//    button.setImage(UIImage(named: "home"), for: .normal)
-//    button.widthAnchor.constraint(equalToConstant: buttonWidth).isActive = true
-//    button.heightAnchor.constraint(equalToConstant: buttonHeight).isActive = true
-//    button.backgroundColor = .red
-//
-//    navigation.navigationItem.rightBarButtonItem = UIBarButtonItem.init(customView: button)
     self.navigation = navigation
   }
 }

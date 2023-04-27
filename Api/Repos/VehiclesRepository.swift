@@ -6,3 +6,9 @@
 //
 
 import Foundation
+import RxSwift
+
+public protocol VehicleRepository {
+   func fatchVehicles() -> Observable<ApiResult<VehicleResponse>>
+   func postVehicle(vehicleRequest: PostVehicleRequest) -> Observable<ApiResult<PostVehicleResponse>>
+}

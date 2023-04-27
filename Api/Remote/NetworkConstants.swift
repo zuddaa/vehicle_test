@@ -7,6 +7,6 @@
 
 import Foundation
 
-class NetworkConstants {
+public class NetworkConstants {
     static let baseURL = "https://devapi.catch-system.com/v1"
 }

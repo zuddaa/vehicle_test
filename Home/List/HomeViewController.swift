@@ -7,15 +7,11 @@
 
 import UIKit
 import SnapKit
+import Api
 
 class HomeViewController: UIViewController {
   
-//  // Create an observable list of items
-//  var items: [MyItem] = [] {
-//      didSet {
-//          tableView.reloadData()
-//      }
-//  }
+
   var viewModel = HomeViewModel()
   // Create a table view
   let tableView = UITableView()
@@ -29,11 +25,11 @@ class HomeViewController: UIViewController {
       // Add the table view and pagination indicator view to the view hierarchy
       view.addSubview(tableView)
       view.addSubview(activityIndicatorView)
-      
+      setupNavigationButton()
       // Set up the table view
       tableView.dataSource = self
       tableView.delegate = self
-      tableView.register(MyTableViewCell.self, forCellReuseIdentifier: "cell")
+      tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
       tableView.rowHeight = UITableView.automaticDimension
       tableView.estimatedRowHeight = 100
       tableView.tableFooterView = UIView()
@@ -43,6 +39,23 @@ class HomeViewController: UIViewController {
       
       // Fetch the initial page of items
       viewModel.fetchItems()
+    viewModel.loading.bind { [weak self] isLoading in
+      if !isLoading {
+        self?.tableView.reloadData()
+        self?.activityIndicatorView.stopAnimating()
+      }else {
+        self?.activityIndicatorView.startAnimating()
+      }
+    }
+  }
+  
+  func setupNavigationButton(){
+    let addVehicleButton = UIBarButtonItem(title: "Add Vehicle", style: .plain, target: self, action: #selector(addVehicle))
+    navigationItem.rightBarButtonItem = addVehicleButton
+  }
+  
+  @objc func addVehicle() {
+      viewModel.router.addNewVehicle()
   }
   
   override func viewDidLayoutSubviews() {
@@ -62,15 +75,18 @@ class HomeViewController: UIViewController {
 extension HomeViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       return viewModel.count
+      if viewModel.currentPage*viewModel.itemsPerPage > viewModel.vehicles.count {
+        return viewModel.vehicles.count
+      }
+      return viewModel.currentPage*viewModel.itemsPerPage
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MyTableViewCell
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! UITableViewCell
+            cell.textLabel?.text = viewModel.vehicles[indexPath.row].id
         // Configure the cell with the item at the current index path
-        let item = items[indexPath.row]
-        cell.configure(with: item)
+//        let item = items[indexPath.row]
+//        cell.configure(with: item)
         
         return cell
     }
@@ -83,8 +99,14 @@ extension HomeViewController: UITableViewDelegate {
         // If the user has scrolled to the bottom of the table view, fetch the next page of items
         let lastRowIndex = tableView.numberOfRows(inSection: 0) - 1
         if indexPath.row == lastRowIndex {
-            fetchItems()
+          if viewModel.currentPage*viewModel.itemsPerPage < viewModel.vehicles.count {
+            viewModel.fatchNewItems()
+            tableView.reloadData()
+          }
         }
     }
+  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    return 100
+  }
     
 }

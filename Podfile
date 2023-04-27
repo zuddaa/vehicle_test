@@ -11,6 +11,7 @@ def shared_pods
   pod 'Resolver'
   pod 'RxAlamofire'
   pod 'SnapKit', '~> 5.6.0'
+  pod 'ObjectMapper'
   
 end
 

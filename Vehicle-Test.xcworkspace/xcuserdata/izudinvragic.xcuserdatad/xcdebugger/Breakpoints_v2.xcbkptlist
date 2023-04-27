@@ -8,7 +8,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "033E8A66-4D1C-4CAF-B285-DB2782E71087"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Vehicle-Test/Coordinators/AuthCoordinator.swift"
@@ -23,65 +23,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "00BFFE2B-EC92-4C83-B89F-8D4A2A6F2930"
-            shouldBeEnabled = "Yes"
+            uuid = "3549C554-A009-4F06-995D-E06F23E332DA"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Vehicle-Test/Coordinators/AppCoordinator.swift"
+            filePath = "Api/Remote/NetworkClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "init(navigation:window:)"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "get(path:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "00BFFE2B-EC92-4C83-B89F-8D4A2A6F2930 - 5bda5f424fd50fe"
-                  shouldBeEnabled = "Yes"
+                  uuid = "3549C554-A009-4F06-995D-E06F23E332DA - d6cd34417f65089b"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Authentification.ApplicationState) -&gt; () in Vehicle_Test.AppCoordinator.init(navigation: Swift.Optional&lt;__C.UINavigationController&gt;, window: Swift.Optional&lt;__C.UIWindow&gt;) -&gt; Vehicle_Test.AppCoordinator"
-                  moduleName = "Vehicle-Test"
+                  symbolName = "Api.NetworkClient.get(path: Swift.String) -&gt; RxSwift.Observable&lt;(__C.NSHTTPURLResponse, Any)&gt;"
+                  moduleName = "Api"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/izudinvragic/Documents/Tests/Vehicle%20Test/Vehicle-Test/Coordinators/AppCoordinator.swift"
+                  urlString = "file:///Users/izudinvragic/Documents/Tests/Vehicle%20Test/Api/Remote/NetworkClient.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
-                  offsetFromSymbolStart = "108">
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "80">
                </Location>
                <Location
-                  uuid = "00BFFE2B-EC92-4C83-B89F-8D4A2A6F2930 - 5bda5f424fd50fe"
-                  shouldBeEnabled = "Yes"
+                  uuid = "3549C554-A009-4F06-995D-E06F23E332DA - d6cd34417f65089b"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Authentification.ApplicationState) -&gt; () in Vehicle_Test.AppCoordinator.init(navigation: Swift.Optional&lt;__C.UINavigationController&gt;, window: Swift.Optional&lt;__C.UIWindow&gt;) -&gt; Vehicle_Test.AppCoordinator"
-                  moduleName = "Vehicle-Test"
+                  symbolName = "Api.NetworkClient.get(path: Swift.String) -&gt; RxSwift.Observable&lt;(__C.NSHTTPURLResponse, Any)&gt;"
+                  moduleName = "Api"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/izudinvragic/Documents/Tests/Vehicle%20Test/Vehicle-Test/Coordinators/AppCoordinator.swift"
+                  urlString = "file:///Users/izudinvragic/Documents/Tests/Vehicle%20Test/Api/Remote/NetworkClient.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
-                  offsetFromSymbolStart = "308">
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "236">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "239AB799-C389-4B82-A326-B4B9DB654B6F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Vehicle-Test/Coordinators/MainCoordinator.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "showHome()"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

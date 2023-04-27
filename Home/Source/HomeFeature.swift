@@ -15,4 +15,8 @@ public struct HomeFeature {
   public static func create(router: HomeRouter) -> UIViewController {
     return HomeViewController()
   }
+  
+  public static func createAddViewController() -> UIViewController {
+    return AddViewController()
+  }
 }

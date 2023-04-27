@@ -23,12 +23,13 @@ public class UserNetworkService {
     
     let URL = "\(NetworkConstants.baseURL)\(LOGIN_PATH)"
 AF.request(URL, method: .post, parameters: loginData).responseDecodable(of: UserLoginResponse.self) { response in
-      guard let token = response.value?.token else {
+      guard let token = response.value?.token, let userId = response.value?.user.id else {
         failure(response.debugDescription)
         return
       }
       let tokens = [
         "token" : token,
+        "userId" : userId
       ]
       completion(tokens)
     }

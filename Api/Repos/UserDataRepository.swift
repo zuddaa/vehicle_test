@@ -11,9 +11,9 @@ import Resolver
 
 public class UserDataRepository: UserRepository {
     
-    @LazyInjected
+    @Injected
     private var userRemoteDataSource: UserRemoteDataSource
-    @LazyInjected
+    @Injected
     private var userLocalDataSource: UserLocalDataSource
   
   public init(){
@@ -22,8 +22,8 @@ public class UserDataRepository: UserRepository {
     
 //MARK: - LOGIN
   public func login(requestModel: UserLoginRequest, completion: @escaping () -> (), failure: @escaping (String) -> ()) {
-        userRemoteDataSource.login(requestModel: requestModel) { [weak self] tokens in
-            self?.userLocalDataSource.saveTokens(tokens: tokens)
+        userRemoteDataSource.login(requestModel: requestModel) { [self] tokens in
+            self.userLocalDataSource.saveTokens(tokens: tokens)
             completion()
         } failure: { errorUserLogin in
             failure(errorUserLogin)

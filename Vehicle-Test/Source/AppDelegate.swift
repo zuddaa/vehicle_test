@@ -9,6 +9,7 @@ import UIKit
 import Authentification
 import Api
 import Resolver
+import Home
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -39,8 +40,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       .scope(.application)
     
     Resolver.register {AuthRouting()}.implements(AuthRouter.self).scope(.application)
-
+    Resolver.register {HomeRouting(navigation: self.navigation)}.implements(HomeRouter.self).scope(.application)
     Resolver.registerRepositories()
+    Resolver.registerVehicleRepository()
     
   }
     // MARK: UISceneSession Lifecycle
@@ -57,4 +59,14 @@ extension Resolver {
       register { UserLocalDataSource() }
       register { UserNetworkService() }
     }
+  static func registerVehicleRepository() {
+    register(VehicleRepository.self) {
+      VehicleDataRepository()
+    }
+    register { VehicleRemoteDataSource() }
+    register { VehiclesNetworkService() }
+    register { VehicleLocalDataSource() }
+  }
+  
+  
 }
